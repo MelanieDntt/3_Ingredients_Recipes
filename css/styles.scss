@@ -1,0 +1,47 @@
+@mixin zero-margin ($pad-up-dn: 0px, $pad-left-right: 0px) {
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+header {
+    padding-top: 50px;
+}
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.jumbotron {
+    @include zero-margin(70px, 30px);
+    text-align: center;
+    background-image: url("../img/food-background.jpg");
+    background-size: cover;
+    position: relative;
+    h1 {
+        opacity: 1;    
+    }
+}
+
+.row-content {
+    @include zero-margin(50px,0px);
+}
+
+.row {
+    img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+}
+
+
+footer {
+    p {
+        text-align: center;
+    }
+}

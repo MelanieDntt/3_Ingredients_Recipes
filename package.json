@@ -1,0 +1,36 @@
+{
+  "name": "3_ingredients_recipes",
+  "version": "1.0.0",
+  "description": "3 ingredients recipes website Coursera project",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "npm-run-all -p watch:scss lite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelanieDntt/3_Ingredients_Recipes.git"
+  },
+  "author": "Mélanie Denotte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelanieDntt/3_Ingredients_Recipes/issues"
+  },
+  "homepage": "https://github.com/MelanieDntt/3_Ingredients_Recipes#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
